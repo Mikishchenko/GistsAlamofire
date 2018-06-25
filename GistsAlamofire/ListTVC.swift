@@ -16,6 +16,7 @@ class ListTableViewController: UITableViewController {
    
    override func viewWillAppear(_ animated: Bool) {
       super.viewWillAppear(true)
+      refresh.attributedTitle = NSAttributedString(string: "Обновление данных ...")
       refresh.addTarget(self, action: #selector(handleRefresh), for: .valueChanged)
       // отображаем индикатор обновления
       self.tableView.addSubview(refresh)
