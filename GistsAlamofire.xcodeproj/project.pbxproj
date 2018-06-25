@@ -16,8 +16,7 @@
 		25A8FEBE20DE6ED9004CD124 /* ListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8FEBD20DE6ED9004CD124 /* ListTVCell.swift */; };
 		25A8FEC020DE6EF6004CD124 /* ListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8FEBF20DE6EF6004CD124 /* ListTVC.swift */; };
 		25A8FEC220DE7007004CD124 /* CommitTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8FEC120DE7007004CD124 /* CommitTVCell.swift */; };
-		25A8FEC420DE7719004CD124 /* GistsPublicRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8FEC320DE7719004CD124 /* GistsPublicRequest.swift */; };
-		25A8FEC620E01DE7004CD124 /* SingleGistRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8FEC520E01DE7004CD124 /* SingleGistRequest.swift */; };
+		25A8FEC620E01DE7004CD124 /* RequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8FEC520E01DE7004CD124 /* RequestData.swift */; };
 		25A8FEC820E04243004CD124 /* DetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A8FEC720E04243004CD124 /* DetailsVC.swift */; };
 		6F35F87FB6F421DCE12D97DE /* Pods_GistsAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36FAA9E39C9344A67D2389AC /* Pods_GistsAlamofire.framework */; };
 /* End PBXBuildFile section */
@@ -35,8 +34,7 @@
 		25A8FEBD20DE6ED9004CD124 /* ListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVCell.swift; sourceTree = "<group>"; };
 		25A8FEBF20DE6EF6004CD124 /* ListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVC.swift; sourceTree = "<group>"; };
 		25A8FEC120DE7007004CD124 /* CommitTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitTVCell.swift; sourceTree = "<group>"; };
-		25A8FEC320DE7719004CD124 /* GistsPublicRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsPublicRequest.swift; sourceTree = "<group>"; };
-		25A8FEC520E01DE7004CD124 /* SingleGistRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleGistRequest.swift; sourceTree = "<group>"; };
+		25A8FEC520E01DE7004CD124 /* RequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestData.swift; sourceTree = "<group>"; };
 		25A8FEC720E04243004CD124 /* DetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsVC.swift; sourceTree = "<group>"; };
 		36FAA9E39C9344A67D2389AC /* Pods_GistsAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GistsAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAA92E90DE5AB2767F312B5 /* Pods-GistsAlamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GistsAlamofire.release.xcconfig"; path = "Pods/Target Support Files/Pods-GistsAlamofire/Pods-GistsAlamofire.release.xcconfig"; sourceTree = "<group>"; };
@@ -78,8 +76,7 @@
 				25A8FEA720DE6DDA004CD124 /* AppDelegate.swift */,
 				25A8FEB920DE6EA7004CD124 /* Gists.swift */,
 				25A8FEBB20DE6EB3004CD124 /* SingleGist.swift */,
-				25A8FEC320DE7719004CD124 /* GistsPublicRequest.swift */,
-				25A8FEC520E01DE7004CD124 /* SingleGistRequest.swift */,
+				25A8FEC520E01DE7004CD124 /* RequestData.swift */,
 				25A8FEBF20DE6EF6004CD124 /* ListTVC.swift */,
 				25A8FEBD20DE6ED9004CD124 /* ListTVCell.swift */,
 				25A8FEC720E04243004CD124 /* DetailsVC.swift */,
@@ -222,11 +219,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				25A8FEBC20DE6EB3004CD124 /* SingleGist.swift in Sources */,
-				25A8FEC620E01DE7004CD124 /* SingleGistRequest.swift in Sources */,
+				25A8FEC620E01DE7004CD124 /* RequestData.swift in Sources */,
 				25A8FEA820DE6DDA004CD124 /* AppDelegate.swift in Sources */,
 				25A8FEC020DE6EF6004CD124 /* ListTVC.swift in Sources */,
 				25A8FEBA20DE6EA7004CD124 /* Gists.swift in Sources */,
-				25A8FEC420DE7719004CD124 /* GistsPublicRequest.swift in Sources */,
 				25A8FEBE20DE6ED9004CD124 /* ListTVCell.swift in Sources */,
 				25A8FEC220DE7007004CD124 /* CommitTVCell.swift in Sources */,
 				25A8FEC820E04243004CD124 /* DetailsVC.swift in Sources */,

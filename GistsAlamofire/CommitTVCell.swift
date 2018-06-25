@@ -23,6 +23,13 @@ class CommitTableViewCell: UITableViewCell {
          let dateFormatter = ISO8601DateFormatter()
          guard let newDate = dateFormatter.date(from: commit.committed_at)
             else { return print("Неудача с конвертированием даты коммита")}
+         
+//         let dateFormatter1 = DateFormatter()
+//         dateFormatter1.dateStyle = .medium
+//         dateFormatter1.timeStyle = .medium
+//         dateFormatter1.locale = Locale(identifier: "en_US")
+//         print(dateFormatter.string(from: newDate)) // Jan 2, 2001
+//         
          commitsDateLabel.text = String(describing: newDate)
          additionsLabel.text = String(describing: commit.change_status.additions)
          deletionsLabel.text = String(describing: commit.change_status.deletions)

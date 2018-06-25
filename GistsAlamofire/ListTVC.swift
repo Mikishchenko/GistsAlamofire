@@ -21,7 +21,7 @@ class ListTableViewController: UITableViewController {
       // отображаем индикатор обновления
       self.tableView.addSubview(refresh)
       // запрашиваем данные для списка gists/public
-      gistsPublicRequest()
+      requestData(for: "public")
       // отобразить таблицу нужно с небольшой задержкой, чтобы успеть получить данные
       DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
          self.tableView.reloadData()
@@ -52,7 +52,7 @@ class ListTableViewController: UITableViewController {
    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
       currentGist = gistsList[indexPath.row]
       // загружаем данные о гисте с заданным id
-      singleGistRequest((currentGist?.id)!)
+      requestData(for: (currentGist?.id)!)
    }
    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
       return 72.0

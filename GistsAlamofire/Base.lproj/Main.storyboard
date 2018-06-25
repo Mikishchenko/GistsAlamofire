@@ -111,18 +111,18 @@
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Please wait! Content updating now ..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="krr-ko-bJq">
-                                <rect key="frame" x="16" y="164" width="343" height="300"/>
+                                <rect key="frame" x="16" y="164" width="343" height="353"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="giu-wx-sDp"/>
-                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4IE-qJ-apT">
-                                <rect key="frame" x="16" y="474" width="343" height="183"/>
+                                <rect key="frame" x="16" y="527" width="343" height="130"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="DpT-yw-oVh"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommitsCell" rowHeight="30" id="S2Y-j1-X42" customClass="CommitTableViewCell" customModule="GistsAlamofire" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="343" height="30"/>
