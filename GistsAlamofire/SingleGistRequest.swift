@@ -14,6 +14,10 @@ var commitsList = [Commit]()
 
 // MARK: - Получение данных по запросу gits/gistID
 public func singleGistRequest(_ gistID: String) {
+   
+   // очищаем массив комитов (для каждого нового гиста он должен быть пуст)
+   commitsList.removeAll()
+
    let url = URL(string: "https://api.github.com/gists/" + gistID)
    Alamofire.request(url!).responseJSON { (response) in
       guard response.result.isSuccess else {
