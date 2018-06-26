@@ -39,9 +39,9 @@ class DetailsViewController: UIViewController {
 extension DetailsViewController: UITableViewDataSource, UITableViewDelegate {
    // Table view data source
    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      DispatchQueue.main.async {
+      DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1), execute: {
          tableView.reloadData()
-      }
+      })
       return commitsList.count
    }
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
