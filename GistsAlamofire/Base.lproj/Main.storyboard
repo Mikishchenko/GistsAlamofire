@@ -80,7 +80,13 @@
                             <outlet property="delegate" destination="AKk-Kb-Qr1" id="Wpz-r7-kZ5"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="GISTS LIST" id="KaX-o9-fm3"/>
+                    <navigationItem key="navigationItem" title="GISTS LIST" id="KaX-o9-fm3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lQ1-Hz-2as">
+                            <connections>
+                                <action selector="addGistsButton:" destination="AKk-Kb-Qr1" id="KGX-ha-iYR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8x-jf-tcx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -204,7 +210,7 @@
                                     <outlet property="delegate" destination="vOt-Eh-4EN" id="Q5X-w2-xon"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GistName" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nu9-A2-fon">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GistName" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nu9-A2-fon">
                                 <rect key="frame" x="106" y="74" width="253" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="PJf-FC-E4P"/>

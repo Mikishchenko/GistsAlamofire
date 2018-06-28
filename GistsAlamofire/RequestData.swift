@@ -24,8 +24,9 @@ public func requestData(for urlEnding: String) {
       let result = response.data
       do {
          switch urlEnding {
-         case "public":
-            gistsList = try JSONDecoder().decode([Gist].self, from: result!)
+         case "public?page=" + String(pageNumber):
+            let newGistsList = try JSONDecoder().decode([Gist].self, from: result!)
+            gistsList += newGistsList
          case currentGist?.id:
             // очищаем массив комитов (для каждого нового гиста он должен быть пуст)
             commitsList.removeAll()
